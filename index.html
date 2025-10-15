@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum Vitae - Valentina Daniela Falconi Ortiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <header>
+        <img id="photo" src="imgs/foto.jpg" alt="Foto de Perfil de Valentina">
         <h1>Valentina Daniela Falconi Ortiz</h1>
         <p>
             Estudiante de Ingeniería en Computación | Data & AI Enthusiast | 
@@ -18,12 +19,7 @@
         </p>
     </header>
 
-    <section id="resumen">
-        <h2>Perfil Profesional</h2>
-        <p>
-            Soy una estudiante de Ingeniería en Computación de 5to semestre en la ESPOL, altamente motivada, con una sólida base en diseño de bases de datos y gran entusiasmo por la programación. Mi objetivo es combinar mis habilidades de ingeniería y mi pasión por la IA para crear soluciones innovadoras en el sector médico/HealthTech. 
-        </p>
-    </section>
+    
 
     <nav>
         <ul>
@@ -33,13 +29,21 @@
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#referencias">Referencias</a></li>
             <li><a href="#colaboracion">Colaboración</a></li> 
         </ul>
     </nav>
 
     <main>
+        <section id="resumen">
+            <h2 class="subtitle">Perfil Profesional</h2>
+            <p>
+                Soy una estudiante de Ingeniería en Computación de 5to semestre en la ESPOL, altamente motivada, con una sólida base en diseño de bases de datos y gran entusiasmo por la programación. Mi objetivo es combinar mis habilidades de ingeniería y mi pasión por la IA para crear soluciones innovadoras en el sector médico/HealthTech. 
+            </p>
+        </section>
+
         <section id="experiencia">
-            <h2>Experiencia Laboral</h2>
+            <h2 class="subtitle">Experiencia Laboral</h2>
             <article> 
                 <h3>Pasante en Soporte Técnico y Administración de Datos</h3>
                 <p>
@@ -54,7 +58,7 @@
         </section>
         
         <section id="educacion">
-            <h2>Educación y Formación</h2>
+            <h2 class="subtitle">Educación y Formación</h2>
             <article>
                 <h3>Ingeniería en Computación</h3>
                 <p><strong>Escuela Superior Politécnica del Litoral (ESPOL)</strong> — Guayaquil, Ecuador</p>
@@ -86,7 +90,7 @@
         </section>
                 
         <section id="habilidades">
-            <h2>Habilidades y Competencias</h2>
+            <h2 class="subtitle">Habilidades y Competencias</h2>
 
             <article id="habilidades-duras">
                 <h3>Matriz de Competencias Técnicas</h3>
@@ -162,7 +166,7 @@
 
 
         <section id="proyectos">
-            <h2>Proyectos Destacados</h2>
+            <h2 class="subtitle">Proyectos Destacados</h2>
             
             <article>
                 <h3>1. Endangered Species Monitoring Database (Proyecto Integrador)</h3>
@@ -196,7 +200,7 @@
         </section>
         
          <section id="testimonios">
-            <h2>Testimonios</h2>
+            <h2 class="subtitle">Testimonios</h2>
             <figure>
                 <blockquote lang="es">
                     <p>“Valentina se destacó en el proyecto de Bases de Datos por su rigor en el diseño relacional y su capacidad para proponer soluciones eficientes con SQL. Su base es muy sólida para una estudiante de su nivel.”</p>
@@ -211,9 +215,28 @@
             
                               
         </section>
+        <section id="referencias">
+            <h2 class="subtitle">Referencias</h2>
+
+            <article>
+                <h3>Dr. Ricardo Mendoza</h3>
+                <p>Jefe de Pasantías, Departamento de Informática (ESPOL)</p>
+                <p>Ricardo.mendoza@espol.edu.ec</p>
+                <p>+593 99 123 4567</p>
+            </article>
+
+            <article>
+                <h3>Ing. Sofía Carvajal</h3>
+                <p>Líder de Proyecto Data Science (TechSolutions)</p>
+                <p>s.carvajal@techsolutions.com</p>
+                <p>+593 98 765 4321</p>
+            </article>
+
+         </section>
+
 
         <section id="colaboracion">
-            <h2>¡Colaboremos!</h2>
+            <h2 class="subtitle">¡Colaboremos!</h2>
             <p>¿Tienes una idea de proyecto, investigación o hackathon? Cuéntamela aquí. Estoy abierta a nuevas oportunidades en desarrollo o HealthTech.</p>
 
             <form action="/submit-collaboration" method="POST"> 
@@ -270,7 +293,7 @@
        
 
         <section id="contacto">
-            <h2>Ubicación de Residencia</h2>
+            <h2 class="subtitle">Ubicación de Residencia</h2>
             <p>Actualmente resido en Guayaquil, Ecuador.</p>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7974.458990061889!2d-79.89711213816706!3d-2.064124691634678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d1243357c07c3%3A0x8c1895f80e849f46!2sMucho%20Lote%202%2C%20Guayaquil!5e0!3m2!1ses-419!2sec!4v1759778631586!5m2!1ses-419!2sec" 
