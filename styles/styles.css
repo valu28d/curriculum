@@ -58,10 +58,46 @@ section form {
     width: 100%; 
 }
 
+/* NUEVA REGLA: Estilo para el Iframe del Mapa de Google Maps */
+section iframe {
+    /* Ocupa todo el ancho disponible dentro de la sección */
+    width: 100%;
+    /* Le da una altura fija para que sea visible (300px es un buen tamaño) */
+    height: 300px; 
+    /* Quita el borde por defecto de los iframes */
+    border: none;
+    /* Asegura que no tenga espacio extra por si acaso */
+    margin-top: 1rem; 
+}
+
 /* 6. OTROS SELECTORES ESTRUCTURALES */
+
+footer {
+    /* Convierte el footer en contenedor flex */
+    display: flex;
+    /* Distribuye el espacio entre los hijos (la lista y el copyright) */
+    justify-content: space-between;
+    /* Centra los elementos verticalmente */
+    align-items: center;
+    padding: 1rem 1.5rem; /* Añade un poco de espacio interno */
+    border-top: 0.2pt solid #cedddd; /* Línea divisoria sutil */
+    margin-top: 20px; /* Separación de la última sección */
+}
+
+/* Aplica el estilo al párrafo dentro del footer (el copyright) */
 footer p {
-    text-align: right;
+    text-align: right; /* Lo mantiene a la derecha */
     font-style: italic;
+    margin: 0; /* Elimina márgenes extra */
+}
+
+/* Estilos para la lista de enlaces de redes sociales (asumo que es un <ul>) */
+footer ul {
+    display: flex; /* Convierte la lista en una fila horizontal */
+    list-style: none; /* Quita las viñetas */
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Espacio entre LinkedIn y GitHub */
 }
 
 /* 7. ESTILOS DE REFERENCIAS (GRID VS FLEX) / se descomenta uno */
